@@ -20,7 +20,7 @@ def word_to_str(words):
     return byte_array.decode("ascii").rstrip("\x00")
 
 # 문자열 -> 워드 리스트
-words = str_to_word("Go")
+words = str_to_word("stop")
 
 # PLC 연결
 plc = mc.Type3E()
