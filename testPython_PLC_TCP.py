@@ -1,5 +1,6 @@
 import pymcprotocol as mc
 
+# 문자열 -> 워드 리스트 함수
 def str_to_word(string):
     temp = string.encode("ascii")
     if len(temp) % 2 != 0:
@@ -10,6 +11,7 @@ def str_to_word(string):
         words.append(word)
     return words
 
+# 문자열 복원 함수
 def word_to_str(words):
     byte_array = bytearray()
     for word in words:
