@@ -43,7 +43,7 @@ def classify_product(indy_t):
 def main_function(indy_t):
     pass
 
-robot_ip = "192.168.3.5"  # Robot (Indy) IP
+robot_ip = "192.168.3.6"  # Robot (Indy) IP
 robot_name = "NRMK-Indy7"  # Robot name (Indy7)
 # robot_name = "NRMK-IndyRP2"  # Robot name (IndyRP2)
 

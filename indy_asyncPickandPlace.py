@@ -27,9 +27,10 @@ def IsMoveDone(indy):
 def grip(hold, indy):
     indy.set_do(2, hold)
 
-def PickandPlace(indy , list_i, seqnum):
+def PickandPlace(indy , list_i, seqnum, seqblock):
 
     for j in range(len(list_i)):
+        seqblock = j
         seqnum = 0
         j_pos_Ab1 = [-44.63, -44.94,-39.79, -14.97,-112.77,-50.14]
         j_pos_Ab2 = [-44.75, -37.67, -74.23, -12.48,-80.36,-0.05]
@@ -85,5 +86,6 @@ robot_name = "NRMK-Indy7"  # Robot name (Indy7)
 indy1 = client.IndyDCPClient(robot_ip, robot_name)
 
 seqnum = 0
+seqblock = 0
 list_num = []
-PickandPlace(indy1 , inputList(list_num), seqnum)
+PickandPlace(indy1 , inputList(list_num), seqnum, seqblock)
